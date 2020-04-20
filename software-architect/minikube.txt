@@ -76,3 +76,7 @@ minikube addons enable ingress
 
 #Get ingress list
 kubectl get ing
+
+#delete pv and pvc
+kubectl delete pvc mysql-pv-claim
+kubectl delete pv mysql-pv-volume
