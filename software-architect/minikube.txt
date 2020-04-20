@@ -86,3 +86,6 @@ kubectl delete pv mysql-pv-volume
 
 #Run mysql console
 kubectl run -it --rm --image=mysql:5.6 --restart=Never mysql-client -- mysql -h mysql -pp123456
+
+#temp!!
+docker run -t -i -p 8000:8000 --env DATABASE_PASSWORD=123456 --env DATABASE_USER=root --env DATABASE_URL=jdbc:mysql://172.17.0.2:3306/otus_vadim_shtukan_db vadimshtukan/otus-sa-l5:0.0.1
