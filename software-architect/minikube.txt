@@ -37,6 +37,9 @@ kubectl get pods -o wide
 #console
 minikube ssh
 
+#console pod
+kubectl exec -it mysql-l5-statefulset-0 -- /bin/bash
+
 #Delete replicaset
 kubectl delete rs vadim-shtukan-l3-relpica-set
 
