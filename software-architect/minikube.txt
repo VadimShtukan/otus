@@ -14,7 +14,7 @@ curl -H @{"Host"="arch.homework"} "http://192.168.99.100/otusapp/version" -UseBa
 while true ; do curl http://192.168.176.128:30049/health
 
 #start
-minikube start
+minikube start --cpus=6 --memory=6g --vm-driver=virtuebox
 
 #stop
 minikube stop
