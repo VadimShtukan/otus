@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: vadim-shtukan-l5
-          image: vadimshtukan/otus-sa-l5:0.0.2
+          image: vadimshtukan/otus-sa-l5:0.0.3
           env:
             - name: DATABASE_PASSWORD
               valueFrom:
