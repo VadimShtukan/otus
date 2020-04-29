@@ -1,0 +1,4 @@
+#create templite
+helm create hello-chart
+
+helm install myapp ./hello-chart --dry-run
