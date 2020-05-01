@@ -24,7 +24,10 @@ $ helm search
 
 $ helm list
 
+#Upgrade
 $ helm upgrade habr
+$ helm history habr
+$ helm rollback habr 1
 
 
  
