@@ -29,7 +29,7 @@ kubectl logs vadim-shtukan-l3-deployment-6c48bcd795-29p94
 kubectl delete pod <pod-name>
 
 #get pods
-while(1) {cls; kubectl get all -o wide; sleep 5;} #Windows
+while(1) {cls; kubectl get all -o wide; sleep 10;} #Windows
 kubectl get all -o wide | wc -Cont -second 5 -cls #Install-Module Watch -Scope CurrentUser 
 kubectl get all
 kubectl get pods -o wide
