@@ -7,7 +7,7 @@ $ helm install lesson-09 .\lesson-09-chart
 $ helm repo add fusionauth https://fusionauth.github.io/charts
 $ helm install fusionauth-helm -f .\fusionauth.yml fusionauth/fusionauth
 !!!! CONFIG BY WEB -> TO ConfigMap or CHANGING IN DB
-http://127.0.0.1:9012/admin/api/ - generate API Key
+http://127.0.0.1:9012/admin/api/ - generate API Key and add grants for this key
 
 
 
