@@ -6,8 +6,10 @@ $ helm install lesson-09 .\lesson-09-chart
 #Install fusionauth
 $ helm repo add fusionauth https://fusionauth.github.io/charts
 $ helm install fusionauth-helm -f .\fusionauth.yml fusionauth/fusionauth
-!!!! CONFIG BY WEB -> TO ConfigMap or CHANGING IN DB
-http://127.0.0.1:9012/admin/api/ - generate API Key and add grants for this key
+$ cat fusionauth_init.sql | kubectl exec -i lesson-09-postgresql-0 -- psql -U fusionauth fusionauth_db
+
+
+kubectl exec lesson-09-postgresql-0 -- bash -c "PGPASSWORD=p123456 pg_dump -U fusionauth fusionauth_db" >1.sql
 
 
 
